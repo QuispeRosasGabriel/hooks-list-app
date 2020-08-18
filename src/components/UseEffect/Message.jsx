@@ -3,9 +3,12 @@ import { useEffect } from "react";
 
 const Message = () => {
   useEffect(() => {
-    console.log("Componente Montado");
-
+    const mouseMove = (ev) => {
+      const cardinals = { x: ev.x, y: ev.y };
+    };
+    window.addEventListener("mousemove", mouseMove);
     return () => {
+      window.removeEventListener("mousemove", mouseMove);
       console.log("Componente Destruido");
     };
   }, []);
