@@ -25,7 +25,7 @@ const CustomFormHook = () => {
 
   return (
     <div>
-      <h2>Use Effect</h2>
+      <h2>Form with custom hook</h2>
       <hr />
       <div className="form-group">
         <input
